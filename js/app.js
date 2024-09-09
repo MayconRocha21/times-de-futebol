@@ -23,7 +23,8 @@ function pesquisar() {
     for (let dado of dados) {
         titulo = dado.titulo.toLowerCase()
         descricao = dado.descricao.toLowerCase()
-        tags = dado.tags.toLowerCase()
+        // tags = dado.tags.toLowerCase()
+        dado.tags = dado.tags.map(tag => tag.toLowerCase());
         // se titulo includes campoPesquisa
         if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
             // cria um novo elemento
