@@ -108,3 +108,55 @@ footer {
     font-size: 1rem; /* Tamanho da fonte */
     font-weight: 600;
 }
+
+/* Responsividade para tablets e dispositivos com largura menor que 768px */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    section input {
+        width: 100%; /* Inputs ocupam 100% da largura disponível */
+    }
+
+    .resultados-pesquisa {
+        width: 100%; /* A caixa de resultados ocupa 100% da largura */
+        height: 40vh; /* Altura ajustada */
+    }
+}
+
+/* Responsividade para smartphones e dispositivos com largura menor que 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Reduz o tamanho da fonte do título */
+        letter-spacing: 0.2rem; /* Ajusta o espaçamento entre letras */
+    }
+
+    section input {
+        width: 100%; /* Inputs ocupam 100% da largura disponível */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+
+    section button {
+        padding: 0.7rem 1rem; /* Ajusta o espaçamento interno */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+
+    .resultados-pesquisa {
+        width: 100%; /* A caixa de resultados ocupa 100% da largura */
+        height: 35vh; /* Altura ajustada */
+        padding: 0.8rem; /* Reduz o espaçamento interno */
+    }
+
+    .item-resultado {
+        padding: 0.8rem; /* Reduz o espaçamento interno */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte dos títulos dos itens */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte do rodapé */
+    }
+}
